@@ -10,7 +10,7 @@
 
 ### Prerequisites:
 - Java 19
-- PostgresSQL
+- Oracle
 
 # Data model
 ## ER diagram for the data model
