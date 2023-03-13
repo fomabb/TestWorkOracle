@@ -36,7 +36,6 @@ METHOD | PATH               | DESCRIPTION
 ------------|--------------------|------------
 POST | /api/save/order                          | create new order
 PUT | /api/add/order/{orderId}/goods/{goodsId}  | add goods to order
-PUT | /api/add/order/{orderId}/goods/{goodsId}  | add goods to order
 GET | /api/order/{id}                           | get order by id
 GET | /api/orders                               | get all orders
 DEL | /api/delete/order/{id}                    | delete order by id
