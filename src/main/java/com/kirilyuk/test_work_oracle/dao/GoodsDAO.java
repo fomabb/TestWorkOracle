@@ -1,6 +1,5 @@
 package com.kirilyuk.test_work_oracle.dao;
 
-import com.kirilyuk.test_work_oracle.dao.GoodsDAO;
 import com.kirilyuk.test_work_oracle.entity.Goods;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
