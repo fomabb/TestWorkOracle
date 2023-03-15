@@ -16,7 +16,7 @@
 # Data model
 ## ER diagram for the data model
 
-![db1.png](src%2Fmain%2Fresources%2Fimg%2Fdb1.png)
+![db_diagram.png](src%2Fmain%2Fresources%2Fimg%2Fdb_diagram.png)
 
 # response.json{}
 ## Order register
