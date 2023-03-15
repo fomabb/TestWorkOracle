@@ -18,13 +18,13 @@ public class Goods {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "good_code")
+    @Column(name = "good_code", columnDefinition = "varchar2")
     private String goodCode;
 
     @Column(name = "price")
     private double price;
 
-    @Column(name = "quantity")
+    @Column(name = "quantity", columnDefinition = "number")
     private int quantity;
 
     @JsonBackReference

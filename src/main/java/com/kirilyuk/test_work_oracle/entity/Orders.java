@@ -23,6 +23,7 @@ public class Orders {
     private Long id;
 
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm")
+    @Column(columnDefinition = "date")
     private LocalDateTime docDate;
 
     @OneToMany(mappedBy = "order"
