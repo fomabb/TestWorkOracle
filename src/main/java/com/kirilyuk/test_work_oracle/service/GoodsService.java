@@ -1,5 +1,6 @@
 package com.kirilyuk.test_work_oracle.service;
 
+import com.kirilyuk.test_work_oracle.dto.OrdersRegistryDTO;
 import com.kirilyuk.test_work_oracle.dto.QuantityUpdateDTO;
 import com.kirilyuk.test_work_oracle.entity.Goods;
 import com.kirilyuk.test_work_oracle.entity.Orders;
@@ -37,5 +38,5 @@ public interface GoodsService {
 
     QuantityUpdateDTO updateQuantity(Long id, QuantityUpdateDTO quantity);
 
-    List<Double> registry(Long orderId);
+    OrdersRegistryDTO registry(Long orderId);
 }

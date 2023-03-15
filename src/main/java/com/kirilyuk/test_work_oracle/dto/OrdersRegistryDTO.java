@@ -1,17 +1,25 @@
 package com.kirilyuk.test_work_oracle.dto;
 
+import com.kirilyuk.test_work_oracle.entity.Goods;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class OrdersRegistryDTO {
 
-    private Long id;
+    private Long numberOrder;
 
-    private int quantity;
+    private List<Goods> numbersGoods = new ArrayList<>();
 
-    private double price;
+    private int quantityAllOrder;
+
+    private double weightAllOrder;
+
+    private double priceAllOrder;
 }
