@@ -16,7 +16,12 @@
 # Data model
 ## ER diagram for the data model
 
-//![redm_db.png](src/main/resources/img/readme_db.png)
+![db1.png](src%2Fmain%2Fresources%2Fimg%2Fdb1.png)
+
+# response.json{}
+## Order register
+
+![responseJson.png](src%2Fmain%2Fresources%2Fimg%2FresponseJson.png)
 
 ## RESTful API
 
