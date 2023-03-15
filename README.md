@@ -23,6 +23,10 @@
 
 ![responseJson.png](src%2Fmain%2Fresources%2Fimg%2FresponseJson.png)
 
+# Postman collection
+## {Json}
+[oracle_test.postman_collection.json](src%2Fmain%2Fresources%2Ffiles%2Foracle_test.postman_collection.json)
+
 ## RESTful API
 
 **1. API Description of general methods for Goods**

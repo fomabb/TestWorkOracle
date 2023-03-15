@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "9164113e-8512-4608-a0ed-a663a979ece0",
+		"name": "oracle_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21948648"
+	},
+	"item": [
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "createOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/save/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"save",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addGoodsInOrder",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/add/order/2/goods/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"add",
+								"order",
+								"2",
+								"goods",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOrderById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/order/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "card",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/orders/all/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders",
+								"all",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateQuantity",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/update/quantity/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"update",
+								"quantity",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/registry/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"registry",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOrder",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/delete/order/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"delete",
+								"order",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Goods",
+			"item": [
+				{
+					"name": "createGoods",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"goodCode\": \"1FE10416.M.03W..\",\r\n    \"price\": 900\r\n    },\r\n    {\r\n   \"goodCode\": \"1FE10416.M.06...\",\r\n    \"price\": 800\r\n    },\r\n    {\r\n   \"goodCode\": \"1FK22054AF110MB0\",\r\n    \"price\": 1200\r\n    },\r\n    {\r\n   \"goodCode\": \"1FK22054AF110SB0\",\r\n    \"price\": 2010\r\n    },\r\n    {\r\n   \"goodCode\": \"1FY20300RA251AA0\",\r\n    \"price\": 1560\r\n    },\r\n    {\r\n   \"goodCode\": \"1FY20300RA251AB0\",\r\n    \"price\": 1700\r\n    },\r\n    {\r\n   \"goodCode\": \"1FY20300RA321AB0\",\r\n    \"price\": 1400\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/goods/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"goods",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allGoods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/goods/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"goods",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "goodsById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/goods/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"goods",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/search?text=1FE10416.M.06...",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "1FE10416.M.06..."
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
