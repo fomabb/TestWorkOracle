@@ -25,7 +25,7 @@
 METHOD | PATH | DESCRIPTION
 ------------|-----|------------
 POST | /api/goods/save      | create new goods (List)
-PUT  | /api/goods/update    | update quantity
+PUT  | /api/goods/update/quantity/{id}    | update quantity by id goods
 GET  | /api/goods/order/all | get all orders with goods
 GET  | /api/goods/all       | get available goods
 GET  | /api/goods/{id}      | get goots by id
@@ -39,6 +39,8 @@ POST | /api/save/order                          | create new order
 PUT | /api/add/order/{orderId}/goods/{goodsId}  | add goods to order
 GET | /api/order/{id}                           | get order by id
 GET | /api/orders                               | get all orders
+GET | /api/orders/all/{id}                      | get all goods in orders by id
+GET | /api/registry/{id}                        | get registry by order id
 DEL | /api/delete/order/{id}                    | delete order by id
 
 
