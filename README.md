@@ -19,7 +19,7 @@
 ![db_diagram.png](src%2Fmain%2Fresources%2Fimg%2Fdb_diagram.png)
 
 # response.json{}
-## http://localhost:8080/api/registry/1
+## Response from server : //localhost:8080/api/registry/1
 
 ![jsonResponse.png](src%2Fmain%2Fresources%2Fimg%2FjsonResponse.png)
 
