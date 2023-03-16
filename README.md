@@ -19,12 +19,13 @@
 ![db_diagram.png](src%2Fmain%2Fresources%2Fimg%2Fdb_diagram.png)
 
 # response.json{}
-## Order register
+## http://localhost:8080/api/registry/1
 
-![responseJson.png](src%2Fmain%2Fresources%2Fimg%2FresponseJson.png)
+![jsonResponse.png](src%2Fmain%2Fresources%2Fimg%2FjsonResponse.png)
 
 # Postman collection
 ## {Json}
+
 [oracle_test.postman_collection.json](src%2Fmain%2Fresources%2Ffiles%2Foracle_test.postman_collection.json)
 
 ## RESTful API
