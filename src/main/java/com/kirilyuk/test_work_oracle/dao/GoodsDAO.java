@@ -30,6 +30,9 @@ public interface GoodsDAO extends JpaRepository<Goods, Long> {
     @Query(value = "select count(*) from goods g where g.order_id=?1", nativeQuery = true)
     int countGoods(@Param("id") Long id);
 
+    @Query(value = "select o.doc_date from orders o where o.id=?1", nativeQuery = true)
+    String date(@Param("id") Long id);
+
     @Query("select g from Goods g where g.goodCode like %:text% and g.order=null")
     List<Goods> search(@Param("text") String text);
 }

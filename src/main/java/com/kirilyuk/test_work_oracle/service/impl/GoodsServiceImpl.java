@@ -105,6 +105,7 @@ public class GoodsServiceImpl implements GoodsService {
         OrdersRegistryDTO registryDTO = new OrdersRegistryDTO();
 
         registryDTO.setNumberOrder(orderId);
+        registryDTO.setDate(dao.date(orderId));
         registryDTO.setNumbersGoods(dao.getAllOrdersById(orderId));
         registryDTO.setQuantityAllOrder(sumQuantity);
         registryDTO.setPriceAllOrder(sumPrice);

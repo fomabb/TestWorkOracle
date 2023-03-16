@@ -15,6 +15,8 @@ public class OrdersRegistryDTO {
 
     private Long numberOrder;
 
+    private String date;
+
     private List<Goods> numbersGoods = new ArrayList<>();
 
     private int quantityAllOrder;
