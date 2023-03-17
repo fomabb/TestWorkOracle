@@ -151,6 +151,7 @@ public class GoodsServiceImpl implements GoodsService {
                 orders.deleteToOrder(goods);
 
                 goods.setOrder(null);
+                goods.setQuantity(1);
             }
 
             Goods good = dao.save(goods);
