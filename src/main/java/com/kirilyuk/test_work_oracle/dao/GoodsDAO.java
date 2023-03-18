@@ -1,11 +1,13 @@
 package com.kirilyuk.test_work_oracle.dao;
 
 import com.kirilyuk.test_work_oracle.entity.Goods;
+import lombok.Data;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.Date;
 import java.util.List;
 
 @Repository
@@ -31,7 +33,7 @@ public interface GoodsDAO extends JpaRepository<Goods, Long> {
     int countGoods(@Param("id") Long id);
 
     @Query(value = "select o.doc_date from orders o where o.id=?1", nativeQuery = true)
-    String date(@Param("id") Long id);
+    Date date(@Param("id") Long id);
 
     @Query("select g from Goods g where g.goodCode like %:text% and g.order=null")
     List<Goods> search(@Param("text") String text);
