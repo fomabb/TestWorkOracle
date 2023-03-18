@@ -21,7 +21,7 @@
 # response.json{}
 ## Response from server : //localhost:8080/api/registry/1
 
-![jsonResponse.png](src%2Fmain%2Fresources%2Fimg%2FjsonResponse.png)
+![JsonResponse.png](src%2Fmain%2Fresources%2Fimg%2FJsonResponse.png)
 
 # Postman collection
 ## {Json}
