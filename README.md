@@ -36,7 +36,6 @@ METHOD | PATH | DESCRIPTION
 ------------|-----|------------
 POST | /api/goods/save      | create new goods (List)
 PUT  | /api/goods/update/quantity/{id}    | update quantity by id goods (quantity +1 or -1 = price++ or price--; if quantity < 1 will be use method remove from order)
-GET  | /api/goods/orders | get all orders with goods
 GET  | /api/goods/all       | get available goods
 GET  | /api/goods/{id}      | get goods by id
 GET  | /api/search          | get goods by good_code
@@ -49,7 +48,7 @@ METHOD | PATH               | DESCRIPTION
 POST | /api/save/order                          | create new order
 PUT | /api/add/order/{orderId}/goods/{goodsId}  | add goods to order
 GET | /api/order/{id}                           | get order by id
-GET | /api/orders                               | get all orders
+GET | /api/orders                               | get all orders with goods
 GET | /api/orders/all/{id}                      | get all goods in orders by id
 GET | /api/registry/{id}                        | get registry by order id
 DEL | /api/delete/order/{id}                    | delete order by id
