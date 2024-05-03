@@ -55,4 +55,4 @@ DEL | /api/delete/order/{id}                    | delete order by id
 
 
 ### My application requests in Postman
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/d9af219fea3fe665c736?action=collection%2Fimport)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/21948648/2sA3JFCkE2)
